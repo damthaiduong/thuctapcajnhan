@@ -1,0 +1,661 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.circle span {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo1 {
+  text-decoration: none;
+}
+
+.mneu2 {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler {
+  margin-left: 35px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-primary {
+  font-size: 20px;
+  color: white;
+  background-color: aqua;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px; 
+  margin-left:250px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(255, 47, 0);
+}
+
+.main-content {
+  display: flex;
+  align-items: center; /* Align content vertically in the middle */
+}
+
+
+.left-content {
+  padding: 20px;
+}
+
+.middle-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.right-content {
+  padding: 20px;
+  text-align: right;
+}
+
+.statistics {
+  margin-top: 50px;
+}
+
+.main-title {
+  font-size: 70px;
+  line-height: 1.2;
+}
+
+.main-description {
+  font-size: 26px;
+  color: #888;
+}
+
+.buttons {
+  
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  margin-top: 20px; /* Add margin to separate buttons from the content */
+}
+
+.buttons button {
+  padding: 25px 30px;
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  color: aliceblue;
+  border-radius: 5px; 
+
+}
+
+.discover-now {
+  margin-right: 20px;
+  background-color: orange;
+}
+
+.learn-more {
+  background-color: #008cba;
+}
+
+.statistic {
+  margin-bottom: 10px;
+}
+
+.number {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 10px;
+  color: #888;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
+  height: 400px;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+  margin-right: 80px; /* Đặt margin-right thành giá trị mong muốn, chẳng hạn 15px */
+  align-items: center;
+}
+
+
+.row-4 button {
+  height: 60px;
+  width: 120px;
+  margin-right: 0;
+  background-color:#1c090c;
+}
+/* Cấu trúc cột chính của trang */
+.row {
+  display: flex;
+  flex-grow: 1; /* Mở rộng cột chính để lấp đầy chiều cao của trang */
+}
+
+/* Cấu trúc cột trái */
+.tour-left-content {
+  width: 70%;
+  margin-right: 30px;
+}
+.tour-left-content p {
+font-size: 22px;
+color: #888;
+}
+/* Cấu trúc cột phải */
+.tour-right-content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Căn phải theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Style cho nút "See all tour" */
+.btn {
+  color: white;
+  background-color: rgb(255, 128, 0);
+  border: none;
+  padding: 20px 50px;
+  text-decoration: none;
+  border-radius: 5px; 
+
+}
+.card {
+  width: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Card image styles */
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Price styles */
+.card-title.price {
+  color: orange;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Location and date-time styles */
+.location, .date-time {
+  margin-bottom: 10px;
+}
+
+/* Icon styles */
+.location i, .date-time i {
+  margin-right: 5px;
+}
+
+/* Custom style for product row */
+.product {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -15px; /* Adjust margin to compensate for column spacing */
+  margin-right: -15px; /* Adjust margin to compensate for column spacing */
+}
+
+/* Custom style for product cards */
+.product .card {
+  flex: 0 0 calc(33.33% - 30px); /* 33.33% width with 30px spacing */
+  margin: 0 15px; /* Adjust margin to create the desired spacing */
+}
+
+.Choose {
+  padding-top: 1000px;
+  padding: 100px;
+ 
+}
+
+.row32 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anh img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Why {
+  margin-left: 100px;
+}
+
+.bold-heading {
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: #343a40; /* Dark text color, you can change this */
+}
+
+.feature,
+.feature-item {
+  display: flex;
+  margin-top: 10px;
+}
+
+.feature-icon {
+  margin-right: 10px;
+}
+
+.icon-earth::before {
+  content: "\1F30D"; /* Unicode character for Earth symbol */
+  font-size: 2rem;
+  color: orange;
+}
+
+.icon-suitcase::before {
+  content: "\1F6EC"; /* Unicode character for Suitcase symbol */
+  font-size: 2rem;
+  color: orange;
+}
+
+.icon-passport::before {
+  content: "\1F6C2"; /* Unicode character for Passport symbol */
+  font-size: 2rem;
+  color: orange;
+}
+
+.feature-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feature-description {
+  font-size: 17px;
+  color: #6c757d; /* Gray text color, you can change this */
+}
+
+
+
+/* Kiểu cho nút */
+.btn {
+    background-color: orange; /* Màu nền, bạn có thể thay đổi */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Kiểu cho nút khi di chuột qua */
+.btn:hover {
+    background-color: rgb(255, 72, 0); /* Màu nền khi di chuột qua, bạn có thể thay đổi */
+}
+.icontrend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Căn phải theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+  margin-top: -80px;
+}
+.column {
+  padding: 50px;
+}
+.card-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.custom-column {
+  flex: 0 0 auto; /* Prevent cards from growing */
+  margin-right: 15px; /* Add some space between cards */
+}
+
+/* Optional: Adjust styles as needed */
+.custom-card {
+  width: 300px; /* Set a fixed width for each card */
+}
+
+.icon111 {
+  display: flex;
+  align-items: center;
+}
+
+.button-container {
+  margin-left: 10px; /* Adjust margin as needed */
+}
+.circle-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-color:orange; /* Set background color */
+}
+
+.circle-text {
+  margin-left: 5px; /* Adjust margin as needed */
+  font-weight: bold; /* Optional: Add bold font */
+}
+.btn ms-5 {
+  margin-left: 30px; 
+  font-size: 50px
+
+}
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.anh {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.align-items-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px; /* Added margin to the right */
+}
+
+.anh1 {
+  display: flex;
+  justify-content: center; /* Centering anh1 */
+}
+
+.anh1 img,
+.anh2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.align-items-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+}
+
+.anh3 {
+  width: 50%;
+  box-sizing: border-box;
+  
+}
+.anh4 {
+  width: 75%;
+  box-sizing: border-box;
+}
+ 
+.type {
+  text-align: center;
+}
+
+.page-title {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.TourType {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px; /* Ajust the height as needed */
+}
+
+.square-container {
+  display: inline-block;
+  margin: 10px;
+}
+
+.square {
+  background-color:white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  text-align: center;
+}
+
+.icon-container i {
+  font-size: 5rem;
+  margin-top: 30px;
+  color: orange; /* Màu chữ là màu cam */
+}
+
+.tour-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.tour-details {
+  font-size: 20px;
+  text-align: center;
+}
+
+.tour-price {
+  color: orange;
+}
+.our {
+  display: flex;
+  align-items: center;
+  /* Add styles for the 'our' container if needed */
+}
+.ure {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 60px;
+  /* Add styles for the 'ure' container if needed */
+}
+.text1 {
+  font-size: 22px;
+  font-style: italic;
+  /* Add styles for the 'text1' element if needed */
+}
+.row15 {
+  display: flex;
+  margin-right: 20px;
+}
+.testimonial-icon {
+  margin-right: 30px; /* Adjust margin as needed */
+}
+.testimonial-rating {
+ color: orange;
+}
+
+.read-item .image {
+    text-align: center;
+  }
+  .travel2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust the height as needed */
+  }
+
+  .read-item {
+    display: flex;
+    align-items: center;
+    margin-right: -20px; /* Adjust the margin as needed */
+  }
+
+  .image1 {
+    text-align: center;
+  }
+
+  .content {
+    text-align: left;
+    margin: 30px;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Additional styling for better visibility */
+  h3, h5, p {
+    margin: 0;
+  }
+
+  .date,
+  .content p {
+    color: #888;
+  }
+  .fixed-container {
+    
+    
+    width: 100%;
+    height: 120%;
+    background-color: #d4c329; /* Màu nền */
+  }
+  
+  .center-content {
+    /* Canh giữa nội dung */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .text-center {
+    /* Canh giữa văn bản */
+    text-align: center;
+  }
+  
+  .subscribe-title {
+    /* Style cho tiêu đề */
+    font-size: 2em;
+    color: white;
+  }
+  
+  .subscribe-form {
+    /* Form đăng ký */
+    margin-top: 20px;
+  }
+  
+  .input-container {
+    /* Container cho ô nhập email và nút đăng ký */
+    display: flex;
+  }
+  
+  .subscribe-input {
+    /* Ô nhập email */
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .subscribe-button {
+    /* Nút đăng ký */
+    padding: 10px;
+    background-color: #a92130; /* Màu nút */
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .justify-content-center {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .recode {
+    text-align: center;
+    margin: 50px 20px 0; /* Khoảng cách 50px phía trên và 0 ở phía dưới, điều chỉnh khoảng cách giữa các cột */
+  }
+
+  h3 {
+    margin-bottom: 20px; /* Khoảng cách giữa tiêu đề và các liên kết */
+  }
+
+  a {
+    display: block;
+    margin-bottom: 25px; /* Khoảng cách giữa các liên kết */
+    text-decoration: none;
+  }
+
+  .recode:nth-child(odd) {
+    margin-right: 50px; /* Khoảng cách giữa các nhóm cột */
+  }
+
+  .recode:nth-child(even) {
+    margin-left: 50px; /* Khoảng cách giữa các nhóm cột */
+  }
+ .recode p {
+  font-size: 20px;
+  text-align: center;
+ }
